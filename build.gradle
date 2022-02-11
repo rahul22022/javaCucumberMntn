@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.api.mntn'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.4.0'
+// https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    testCompile group: 'io.cucumber', name: 'cucumber-java', version: '6.11.0'
+// https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    implementation group: 'org.reflections', name: 'reflections', version: '0.10.2'
+
+
+}

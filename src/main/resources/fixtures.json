@@ -1,0 +1,58 @@
+{
+  "users": {
+    "ADD_USER": {
+      "payload": {
+        "title": "foo",
+        "body": "bar",
+        "userId": 1,
+      },
+      "url": "https://jsonplaceholder.typicode.com/posts",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "postRequest"
+
+
+    },
+    "DELETE_USER": {
+      "payload": {
+        "username": "testUser",
+        "email": ""
+      },
+      "url": "APIURL",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "postrequest"
+
+
+    },
+    "UPDATE_USER": {
+      "payload": {
+        "username": "testUser1",
+        "email": "parashar.002@gmail.com"
+      },
+      "url": "APIURL",
+      "expectedresult": {
+        "": ""
+      },
+      "method": "putRequest"
+
+
+    },
+    "GET_USER": {
+      "payload": {},
+      "url": "https://jsonplaceholder.typicode.com/todos/1",
+      "expectedresult": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+      },
+      "method": "getRequest"
+
+
+    }
+  }
+
+}
