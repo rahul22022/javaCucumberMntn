@@ -13,5 +13,11 @@ This is a data driven test automtion approach for the API testing. Following tec
 MODULES
 ------------
 Here are important modules for the code
-1. Main :- Helper Method
-2. 
+Main :- Helper Class
+  * Helper Class has following methods 
+  *    *  getRequest(String url) returns the resposne of get request
+  *    *  putRequest(String url) returns the resposne of put request
+  *    *  postRequest(String url) returns the resposne of POST request
+  *    *  deleteRequest(String url) returns the resposne of delete request
+
+ 
