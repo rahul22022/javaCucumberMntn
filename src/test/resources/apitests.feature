@@ -10,6 +10,6 @@ Examples: jobs
 |users    |200        |OK             |GET          | GET_USER|
 |users    |200        |OK             |GET          | GET_BARCODE|
 |users    |200        |OK             |GET          | GET_BIKE|
-|users    |200        |OK             |POST         | ALL_CAPS|
+#|users    |200        |OK             |POST         | ALL_CAPS|
 #|JOBS    |200        |OK             |PUT          | UPDATE_USER_Negative|
 #|JOBS    |200        |OK             |DELETE       | DELETE_USER|
