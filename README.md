@@ -40,10 +40,11 @@ This is how the tests work.
 1. feature file:- add the test case to feature file with the action being the test identifier
 2. fixtures.json :- this is the driver file once you have added the test to feature file add a new tag to fixtiures file
     a. the action should match the key in fixtures example
-    feature :-
-    |users    |200        |OK             |GET          | GET_USER|
-    Fixture:
-      "GET_USER": {
+    
+    - feature :-
+   - |users    |200        |OK             |GET          | GET_USER|
+   -  Fixture:
+   -    "GET_USER": {
           "payload": {},
           "url": "https://jsonplaceholder.typicode.com/todos/1",
           "expectedresult": {
