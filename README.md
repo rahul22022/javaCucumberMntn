@@ -66,7 +66,7 @@ Todo
 -----------
 1. This automation design is working for get requests.
 2. I could not find a good POST end point to show in example one added is not working but can be fixed with a bit more of troubleshooting
-3. We can add PUT DELETE a=or any other API calls without changing the code
+3. We can add PUT DELETE or any other API calls without changing the code
 4. Even for REST calls with URI you can add a new method to Helper class
 5. Any type of API call can be added to heklpers.
 6. Reporting is not yet added
