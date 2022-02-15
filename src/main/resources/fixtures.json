@@ -1,12 +1,10 @@
 {
   "users": {
-    "ADD_USER": {
+    "ALL_CAPS": {
       "payload": {
-        "title": "foo",
-        "body": "bar",
-        "userId": 1,
+     "INPUT": "Hello world"
       },
-      "url": "https://jsonplaceholder.typicode.com/posts",
+      "url": "HTTP://API.SHOUTCLOUD.IO/V1/SHOUT",
       "expectedresult": {
         "": ""
       },
@@ -43,6 +41,32 @@
     "GET_USER": {
       "payload": {},
       "url": "https://jsonplaceholder.typicode.com/todos/1",
+      "expectedresult": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+      },
+      "method": "getRequest"
+
+
+    },
+    "GET_BARCODE": {
+      "payload": {},
+      "url": "https://world.openfoodfacts.org/api/v0/product/737628064502.json",
+      "expectedresult": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+      },
+      "method": "getRequest"
+
+
+    },
+    "GET_BIKE": {
+      "payload": {},
+      "url": "https://bikewise.org:443/api/v2/incidents?page=1&proximity_square=100",
       "expectedresult": {
         "userId": 1,
         "id": 1,

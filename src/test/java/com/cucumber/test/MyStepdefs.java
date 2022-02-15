@@ -1,3 +1,5 @@
+package com.cucumber.test;
+
 import com.automation.cucumber.Helper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -62,6 +64,7 @@ public class MyStepdefs {
     @Then("response code is (.*) is (.*)$")
     public void response_code(String action,Integer status) {
         Integer statusCode = (Integer) response.statusCode();
+        System.out.println(response.getBody().prettyPrint());
         assertEquals(statusCode,status);
         // Write code here that turns the phrase above into concrete actions
 //        throw new io.cucumber.java.PendingException();

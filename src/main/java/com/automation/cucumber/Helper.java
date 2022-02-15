@@ -10,6 +10,7 @@ import org.json.simple.parser.ParseException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
@@ -32,7 +33,6 @@ public class Helper {
     public Response postRequest(String url,JSONObject payload){
         Response getResponse = given()
                 .header("Content-type", "application/json")
-                .header("charset","UTF-8")
                 .and()
                 .body(payload)
                 .when()
